@@ -1,0 +1,40 @@
+<html>
+
+<head>
+  <title> DOM </title>
+</head>
+
+<body>
+  <button>Hello</button>
+  <button class="js-button">Second hello</button>
+
+  <script>
+    // prints out the objects with  button and the  objects with. button and a class of js-button
+    console.log(document.querySelector('button'));
+    console.log(document.querySelector('js-button'));
+
+    // select only  button  with js-button class
+    // checking the innerHTML attributes 
+    const buttonElement = document.querySelector('. js-button');
+    console.log(buttonElement);
+    console.log(buttonElement.innerHTML);
+
+    // changed the inner name for the button with   javascript with innerHTML and console.log to print it   in the terminal.
+    buttonElement.innerHTML = "Change";
+    console.log(buttonElement.innerHTML);
+
+
+    // learning how to use document 
+    /*
+    document.body.innerHTML = 'hello';
+    document.title = 'bedwars';
+    console.log(document.body);
+    console.log(typeof document.body);
+    console.log(document.body.innerHTML);
+    document.body.innerHTML = '<button>Good Job</button>';
+    */
+
+  </script>
+</body>
+
+</html>
